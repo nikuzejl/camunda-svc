@@ -1,0 +1,9 @@
+zeebe:
+  client:
+    broker:
+      contactPoint: localhost:26500
+    worker:
+      executor:
+        type: default
+    security:
+      plaintext: true
