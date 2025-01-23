@@ -5,7 +5,7 @@ services:
   elasticsearch:
     image: docker.elastic.co/elasticsearch/elasticsearch-oss:6.8.23
     ports:
-      - "9200:9200"
+      - "9201:9201"
     environment:
       - discovery.type=single-node
       - cluster.name=elasticsearch
@@ -88,7 +88,7 @@ services:
     image: confluentinc/cp-enterprise-control-center:5.5.12
     hostname: control-center
     ports:
-      - "9021:9021"
+      - "9020:9020"
     environment:
       CONTROL_CENTER_ZOOKEEPER_CONNECT: "zookeeper:2181"
       CONTROL_CENTER_BOOTSTRAP_SERVERS: "kafka:19092"

@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.kafka.core.KafkaTemplate;
 
 import java.util.Map;
 
@@ -38,5 +39,11 @@ public class ProcessApplication implements CommandLineRunner {
 
     LOG.info("Started instance for processDefinitionKey='{}', bpmnProcessId='{}', version='{}' with processInstanceKey='{}'",
         event.getProcessDefinitionKey(), event.getBpmnProcessId(), event.getVersion(), event.getProcessInstanceKey());
+  }
+
+  CommandLineRunner commandLineRunner(KafkaTemplate<String, String> kafkaTemplate) {
+    return args -> {
+      kafkaTemplate.send("camunda-task", "Hello from the Spring Boot get started");
+    };
   }
 }

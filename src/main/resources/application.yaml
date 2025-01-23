@@ -5,3 +5,7 @@
 zeebe.client.broker.gatewayAddress: 127.0.0.1:26500
 zeebe.client.security.plaintext: true
 spring.main.allow-bean-definition-overriding: true
+
+spring.kafka.bootstrap-servers: localhost:9092
+#spring.kafka.consumer.auto-offset-reset: earliest
+

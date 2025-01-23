@@ -1,4 +1,26 @@
-# Camunda Platform 8 - Get Started - Spring Boot
+# Running C8 cluster
+- Start Docker daemon and run camunda and camunda-svc containers
+- Operate http://localhost:8081
+- Tasklist http://localhost:8082/
+- Cluster endpoint/gateway http://0.0.0.0:26500
+
+# Starting Kafka
+```
+docker-compose -f docker-compose-local-kafka.yml up
+```
+
+# TO-DO
+- Kafka
+- gRPC
+- REST
+- LDAP
+
+# Learning resources
+https://github.com/camunda-community-hub/kafka-connect-zeebe/blob/main/docker/docker-compose-local-kafka.yml
+
+
+
+## Camunda Platform 8 - Get Started - Spring Boot
 
 This guide explains how to setup a Spring Boot project to automate a process using
 [Camunda Platform 8](https://camunda.com/products/cloud/).
