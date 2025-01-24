@@ -1,13 +1,17 @@
-# Running C8 cluster
-- Start Docker daemon and run camunda and camunda-svc containers
+## Running C8 cluster
+- For the first time, follow instruction the c8-self-managed folder
+- Start Docker desktop
+- Runner Docker images
 - Operate http://localhost:8081
 - Tasklist http://localhost:8082/
 - Cluster endpoint/gateway http://0.0.0.0:26500
 
-# Starting Kafka
-```
-docker-compose -f docker-compose-local-kafka.yml up
-```
+## Starting Kafka
+- `cd C:\Users\%USERNAME%\kafka`
+- `.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties`
+- `.\bin\windows\kafka-server-start.bat .\config\server.properties`
+- `.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic my-topic`
+- `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic my-topic --from-beginning`
 
 # TO-DO
 - Kafka
@@ -16,9 +20,9 @@ docker-compose -f docker-compose-local-kafka.yml up
 - LDAP
 
 # Learning resources
-https://github.com/camunda-community-hub/kafka-connect-zeebe/blob/main/docker/docker-compose-local-kafka.yml
-
-
+- https://github.com/camunda-community-hub/kafka-connect-zeebe/blob/main/docker/docker-compose-local-kafka.yml
+- https://www.youtube.com/watch?v=SqVfCyfCJqw
+- https://www.youtube.com/watch?v=BwYFuhVhshI&t=467s
 
 ## Camunda Platform 8 - Get Started - Spring Boot
 

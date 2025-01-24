@@ -22,7 +22,7 @@ The full enviornment contains these components:
 - Elasticsearch
 - KeyCloak
 
-Clone this repo and issue the following command to start your environment:
+##  Start the environment:
 
 ```
 docker-compose up -d
@@ -52,12 +52,3 @@ docker-compose -f docker-compose-core.yaml up -d
 ```
 
 Zeebe, Operate, Tasklist, along with Optimize require a separate network from Identity as you'll see in the docker-compose file. Feedback and updates are welcome!
-
-# Camunda Platform 7
-
-- [Documentation](https://docs.camunda.org/)
-- [GitHub](https://docs.camunda.org/)
-
-# YouTube video
-
-https://www.youtube.com/watch?v=WuAvBbcV4Tk&list=PLxYSIlUk9lvXWdlUQYkGzj-igFmCdgjtO&index=5
