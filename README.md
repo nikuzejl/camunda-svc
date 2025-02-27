@@ -6,12 +6,39 @@
 - Tasklist http://localhost:8082/
 - Cluster endpoint/gateway http://0.0.0.0:26500
 
-## Starting Kafka
+## Camunda 8 Run 8.6.2 Releases
+https://github.com/camunda/camunda/releases/tag/c8run-8.6.2
+
+## Camunda 8 Run on Linux
+- `sudo apt install openjdk-21-jdk`  
+- `echo 'export JAVA_HOME="/usr"' >> ~/.bashrc`
+- `echo 'export ES_JAVA_HOME="/usr"' >> ~/.bashrc`  
+- `wget https://github.com/camunda/camunda/releases/download/c8run-8.6.2/camunda8-run-8.6.2-linux-x86_64.tar.gz`
+- `tar -xvzf camunda8-run-8.6.2-linux-x86_64.tar.gz`
+- `cd c8run`
+- `start.sh`
+
+## Camunda 8 Run on Windows
+- Install JDK 21+  
+- Set environment variables JAVA_HOME and JAVA_VERSION  
+- Extract the archive  
+- `cd C:\Users\%USERNAME%\Masabo\Desktop\Software\c8run`
+- `.\c8run.exe start` 
+
+## Starting Kafka on Windows
 - `cd C:\Users\%USERNAME%\kafka`
 - `.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties`
 - `.\bin\windows\kafka-server-start.bat .\config\server.properties`
 - `.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic my-topic`
-- `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic my-topic --from-beginning`
+- `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic my-topic --from-beginning`  
+
+## Starting Kafka on Linux
+- `~/Desktop/kafka`
+- `./bin/zookeeper-server-start.sh ./config/zookeeper.properties`
+- `./bin/kafka-server-start.sh ./config/server.properties`
+- `./bin/kafka-console-producer.sh --broker-list localhost:9092 --topic my-topic`
+- `./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic my-topic --from-beginning`
+
 
 # TO-DO
 - Kafka

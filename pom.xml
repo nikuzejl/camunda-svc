@@ -6,7 +6,7 @@
 	<name>camunda-svc</name>
 	<description>Camunda Platform Get Started Spring Boot Example </description>
 	<groupId>io.camunda.get-started</groupId>
-	<artifactId>orchestrator</artifactId>
+	<artifactId>camunda-svc</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 
 	<properties>
