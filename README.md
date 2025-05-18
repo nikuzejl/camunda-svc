@@ -27,17 +27,19 @@ https://github.com/camunda/camunda/releases/tag/c8run-8.6.2
 
 ## Starting Kafka on Windows
 - `cd C:\Users\%USERNAME%\kafka`
-- `.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties`
-- `.\bin\windows\kafka-server-start.bat .\config\server.properties`
-- `.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic my-topic`
-- `.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic my-topic --from-beginning`  
+- `C:\Users\%USERNAME%\kafka\bin\windows\zookeeper-server-start.bat C:\Users\%USERNAME%\kafka\config\zookeeper.properties`
+- `C:\Users\%USERNAME%\kafka\bin\windows\kafka-server-start.bat C:\Users\%USERNAME%\kafka\config\server.properties`
+
+- `C:\Users\%USERNAME%\kafka\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic my-topic`
+- `C:\Users\%USERNAME%\kafka\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic my-topic --from-beginning`  
 
 ## Starting Kafka on Linux
-- `~/Desktop/kafka`
-- `./bin/zookeeper-server-start.sh ./config/zookeeper.properties`
-- `./bin/kafka-server-start.sh ./config/server.properties`
-- `./bin/kafka-console-producer.sh --broker-list localhost:9092 --topic my-topic`
-- `./bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic my-topic --from-beginning`
+- `cd ~/Desktop/kafka`
+- `~/Desktop/Software/kafka/bin/zookeeper-server-start.sh ~/Desktop/Software/kafka/config/zookeeper.properties`
+- `~/Desktop/Software/kafka/bin/kafka-server-start.sh ~/Desktop/Software/kafka/config/server.properties`
+
+- `~/Desktop/Software/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic my-topic`
+- `~/Desktop/Software/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic my-topic --from-beginning`
 
 
 # TO-DO
