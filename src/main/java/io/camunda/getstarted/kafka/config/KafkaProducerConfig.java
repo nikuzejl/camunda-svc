@@ -1,4 +1,4 @@
-package io.camunda.getstarted.kafka;
+package io.camunda.getstarted.kafka.config;
 
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;

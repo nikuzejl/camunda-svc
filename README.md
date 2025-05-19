@@ -20,7 +20,7 @@
 ### Windows
 - Install JDK 21+
 - Set environment variables JAVA_HOME and JAVA_VERSION
-- Dowload https://github.com/camunda/camunda/releases/tag/c8run-8.6.2
+- Download https://github.com/camunda/camunda/releases/tag/c8run-8.6.2
 - Extract the archive
 
 ## Starting Camunda 8
@@ -35,16 +35,16 @@
 - `C:\Users\%USERNAME%\kafka\bin\windows\zookeeper-server-start.bat C:\Users\%USERNAME%\kafka\config\zookeeper.properties`
 - `C:\Users\%USERNAME%\kafka\bin\windows\kafka-server-start.bat C:\Users\%USERNAME%\kafka\config\server.properties`
 
-- `C:\Users\%USERNAME%\kafka\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic my-topic`
-- `C:\Users\%USERNAME%\kafka\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic my-topic --from-beginning`  
+- `C:\Users\%USERNAME%\kafka\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic camunda-kafka-topic`
+- `C:\Users\%USERNAME%\kafka\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic camunda-kafka-topic --from-beginning`  
 
 ## Starting Kafka on Linux
 - `cd ~/Desktop/kafka`
 - `~/Desktop/Software/kafka/bin/zookeeper-server-start.sh ~/Desktop/Software/kafka/config/zookeeper.properties`
 - `~/Desktop/Software/kafka/bin/kafka-server-start.sh ~/Desktop/Software/kafka/config/server.properties`
 
-- `~/Desktop/Software/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic my-topic`
-- `~/Desktop/Software/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic my-topic --from-beginning`
+- `~/Desktop/Software/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic camunda-kafka-topic`
+- `~/Desktop/Software/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic camunda-kafka-topic --from-beginning`
 
 # TO-DO
 - Kafka
