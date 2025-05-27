@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+## logs
+/kafka/
+
+## c8ru
+/c8run/
